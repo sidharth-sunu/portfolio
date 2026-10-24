@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sidharth's portfolio - Python backend development, Linux, and infrastructure.">
+    <title>Sidharth Sunu | Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="terminal" aria-label="Interactive portfolio terminal">
+            <header class="terminal-header">
+                <div class="window-controls" aria-hidden="true">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">sidh@homelab: ~/portfolio</span>
+            </header>
+            <div class="terminal-body" id="terminal-output" aria-live="polite">
+                <!-- Default Content -->
+                <div class="terminal-line">
+                    <span class="prompt">sidh@dev:~$</span> <span>whoami</span>
+                </div>
+                <div class="output-block">
+                    <h1 class="whoami-name">Sidharth Sunu</h1>
+                    <p class="whoami-title">Python backend developer | Linux enthusiast</p>
+                </div>
+
+                <div class="terminal-line">
+                    <span class="prompt">sidh@dev:~$</span> <span>cat about.txt</span>
+                </div>
+                <div class="output-block">
+                    <p>I build backend services, automate infrastructure, and enjoy understanding what happens under the hood.</p>
+                </div>
+
+                <div class="terminal-line">
+                    <span class="prompt">sidh@dev:~$</span> <span>ls ./projects</span>
+                </div>
+                <div class="projects-container">
+                    <a href="#" class="project-card">
+                        <span class="project-icon">📈</span>
+                        <div class="project-details">
+                            <h3>collector/</h3>
+                            <p>Linux host monitoring · FastAPI · SQLite</p>
+                        </div>
+                        <span class="project-arrow">↗</span>
+                    </a>
+                    <a href="#" class="project-card">
+                        <span class="project-icon">🖧</span>
+                        <div class="project-details">
+                            <h3>homelab/</h3>
+                            <p>Linux · Proxmox · Docker · Networking</p>
+                        </div>
+                        <span class="project-arrow">↗</span>
+                    </a>
+                    <a href="#" class="project-card">
+                        <span class="project-icon">&lt;/&gt;</span>
+                        <div class="project-details">
+                            <h3>backend-projects/</h3>
+                            <p>Python · APIs · PostgreSQL</p>
+                        </div>
+                        <span class="project-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+            
+            <form class="terminal-input-line" id="terminal-form">
+                <label for="command-input" class="prompt">sidh@dev:~$</label>
+                <input id="command-input" name="command" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command" autofocus>
+            </form>
+
+            <footer class="terminal-footer">
+                <a href="#">GITHUB ↗</a>
+                <a href="#">LINKEDIN ↗</a>
+                <a href="#">EMAIL ↗</a>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
